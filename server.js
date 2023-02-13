@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const logger = require("morgan");
 const cors = require("cors");
+const axios = require("axios");
 
 const app = express();
 
@@ -22,10 +23,12 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "build")));
 
 // ROUTES
+const baseURL = "https://swapi.dev/api/";
 
-// test route
-app.get("/test_route", (req, res) => {
-  res.send("test route");
+// ping SWAPI for all starships
+app.get(`${baseURL}starships/`, async (req, res) => {
+  let apiResponse = await axios(`${baseURL}starships/`);
+  res.json(apiResponse.data);
 });
 
 // catch-all route, must be last in route list

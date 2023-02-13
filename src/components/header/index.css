@@ -1,0 +1,8 @@
+h1 {
+  background-color: black;
+  text-transform: uppercase;
+  letter-spacing: 1ch;
+  font-size: clamp(1.75rem, 4vw + 1rem, 3rem);
+  text-shadow: -2px -2px 0 yellow, 2px -2px 0 yellow, -2px 2px 0 yellow,
+    2px 2px 0 yellow;
+}
