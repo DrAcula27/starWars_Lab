@@ -1,7 +1,8 @@
 import React from "react";
+import "./index.css";
 
 const CardsContainer = ({ children }) => {
-  return <section className="card-container">{children}</section>;
+  return <section className="cards-container">{children}</section>;
 };
 
 export default CardsContainer;

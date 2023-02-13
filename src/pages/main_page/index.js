@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Card from "../../components/card";
 import CardsContainer from "../../components/cards_container";
 import Header from "../../components/header";
+import "./index.css";
 
 const MainPage = () => {
   const [starshipArray, setStarshipArray] = useState([]);
@@ -32,7 +33,7 @@ const MainPage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="page">
       <Header />
       <CardsContainer>
         {starshipArray.map((starship, i) => {
