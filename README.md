@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to MERN_boilerplate!</h1>
+<h1 align="center">Welcome to StarWars_Lab!</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/npm-%3E%3D9.1.2-blue.svg" />
@@ -13,7 +13,7 @@
 
 ![demo](./public/assets/demo.png)
 
-### 🏠 [Homepage](https://github.com/DrAcula27/MERN_boilerplate#readme)
+### 🏠 [Homepage](https://github.com/DrAcula27/starWars_Lab#readme)
 
 ## Author
 
