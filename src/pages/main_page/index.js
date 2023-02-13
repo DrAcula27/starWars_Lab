@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useRef, useState } from "react";
+import ShowMoreShipsBtn from "../../components/button";
 import Card from "../../components/card";
 import CardsContainer from "../../components/cards_container";
 import Header from "../../components/header";
@@ -40,6 +41,7 @@ const MainPage = () => {
           return <Card key={i} starshipName={starship.name} />;
         })}
       </CardsContainer>
+      <ShowMoreShipsBtn />
     </div>
   );
 };
