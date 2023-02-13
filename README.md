@@ -11,7 +11,9 @@
 
 ## Demo
 
-![demo](./public/assets/demo.png)
+[demo link](https://starwars-lab.onrender.com)
+
+![demo image](./img/demo.png)
 
 ### 🏠 [Homepage](https://github.com/DrAcula27/starWars_Lab#readme)
 
