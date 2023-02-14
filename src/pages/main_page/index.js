@@ -25,6 +25,11 @@ const MainPage = () => {
     setStarshipArray(results);
   };
 
+  const onPageChange = (page) => {
+    setCurrentPage(page);
+    makeServerCall(page);
+  };
+
   useEffect(() => {
     if (isFirstRender.current === true) {
       isFirstRender.current = false;
@@ -46,7 +51,8 @@ const MainPage = () => {
         currentPage={currentPage}
         totalCount={36}
         pageSize={pageSize}
-        onPageChange={(page) => setCurrentPage(page)}
+        onPageChange={onPageChange}
+        makeServerCall={makeServerCall}
       />
     </div>
   );

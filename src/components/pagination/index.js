@@ -26,11 +26,13 @@ const Pagination = (props) => {
   }
 
   const onNext = () => {
-    onPageChange(currentPage + 1);
+    let nextPage = currentPage + 1;
+    onPageChange(nextPage);
   };
 
   const onPrevious = () => {
-    onPageChange(currentPage - 1);
+    let previousPage = currentPage - 1;
+    onPageChange(previousPage);
   };
 
   let lastPage = paginationRange[paginationRange.length - 1];
