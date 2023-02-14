@@ -43,7 +43,13 @@ const MainPage = () => {
       <Header />
       <CardsContainer>
         {starshipArray.map((starship, i) => {
-          return <Card key={i} starshipName={starship.name} />;
+          return (
+            <Card
+              key={i}
+              starshipName={starship.name}
+              starshipClass={starship.starship_class}
+            />
+          );
         })}
       </CardsContainer>
       <Pagination

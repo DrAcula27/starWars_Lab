@@ -5,15 +5,15 @@
   <img src="https://img.shields.io/badge/node-%3E%3D18.12.1-blue.svg" />
 </p>
 
-> Lorem ipsum
+> Per Scholas - Week 12 - React: Displaying API Data - Assignment: starWars_Lab
 
-> Lorem ipsum
+> In this assignment, I consumed the [Star Wars API (SWAPI)](https://swapi.dev/) and used it to display the starships. Since the API uses pagination, I used pagination to enable the user to view all starships, not just the first page of starships.
 
 ## Demo
 
 [demo link](https://starwars-lab.onrender.com)
 
-![demo image](./img/demo.png)
+![demo image](./src/img/demo.png)
 
 ### 🏠 [Homepage](https://github.com/DrAcula27/starWars_Lab#readme)
 
@@ -25,6 +25,21 @@
 - LinkedIn: [@daniellerandrews](https://linkedin.com/in/daniellerandrews)
 
 ## Project Details
+
+**Styling in this lab is secondary to completing the functionality**
+
+### Minimum Viable Product (MVP)
+
+1. Research documentation of SWAPI Links to an external site. to find the endpoint for the `starships` resource.
+1. Create a route in `server.js` to call the API.
+1. Use named exports to expose AJAX functionality as needed, e.g., `export function getAllStarships() {...}` to obtain all starships.
+1. Obtain all of the starships from the API and render in `<App>` a card for each starship.
+1. Cards should contain the text of the starship's name.
+
+### Bonus Features
+
+1. Display additional details for each Starship in it's respectable card.
+1. This API has a pagination feature that allows you to get additional starships to display - find out how to use this to your advantage and allow users to get more starships at the click of a button.
 
 **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
@@ -97,20 +112,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Tech Stack
 
-This project uses the MERN stack.
+This project uses the following:
 
-- **M** - [MongoDB](https://www.mongodb.com/) <img src="https://raw.githubusercontent.com/mongodb/mongo/master/docs/leaf.svg" width="20" height="20" />
 - **E** - [Express](https://expressjs.com/) <img src="https://raw.githubusercontent.com/expressjs/expressjs.com/gh-pages/images/favicon.png" width="20" height="20" />
 - **R** - [React](https://reactjs.org/) <img src="https://raw.githubusercontent.com/facebook/react/main/fixtures/attribute-behavior/public/favicon.ico" width="20" height="20" />
 - **N** - [Node](https://nodejs.org/en/) <img src="https://raw.githubusercontent.com/nodejs/nodejs.org/main/static/images/logos/js-green.svg" width="20" height="20" />
 
-## Future Work
-
--
-
 ## Attributions
 
--
+- Background image is from [cssanimation.rocks](https://cssanimation.rocks/demo/starwars/images/bg.jpg).
 
 ## Show Your Support
 
