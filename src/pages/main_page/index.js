@@ -12,12 +12,11 @@ const MainPage = () => {
 
   let pageSize = 10;
   let isFirstRender = useRef(true);
-  const baseURL = "https://swapi.dev/api/";
 
   const makeServerCall = async (page) => {
     let serverResponse = await axios({
       method: "GET",
-      url: `${baseURL}/starships/?page=${page}`,
+      url: `/get_starships/?page=${page}`,
     });
     let results = serverResponse.data.results;
     pageSize = results.length;

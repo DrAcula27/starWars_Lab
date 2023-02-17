@@ -26,9 +26,9 @@ app.use(express.static(path.join(__dirname, "build")));
 const baseURL = "https://swapi.dev/api/";
 
 // ping SWAPI for all starships
-app.get(`${baseURL}starships/`, async (req, res) => {
+app.get(`/get_starships/`, async (req, res) => {
   let pageFromUrl = req.query.page;
-  let apiResponse = await axios(`${baseURL}starships/${pageFromUrl}`);
+  let apiResponse = await axios(`${baseURL}starships/?page=${pageFromUrl}`);
   res.json(apiResponse.data);
 });
 
