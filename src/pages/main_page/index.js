@@ -13,12 +13,12 @@ const MainPage = () => {
   let pageSize = 10;
   let isFirstRender = useRef(true);
 
-  const makeServerCall = async (page) => {
-    let serverResponse = await axios({
-      method: "GET",
-      url: `/get_starships/?page=${page}`,
-    });
-    let results = serverResponse.data.results;
+  const makeServerCall = async (pageReq) => {
+    const config = { params: { page: pageReq } };
+    const serverResponse = await axios.get(`/get_starships/`, config);
+
+    const results = serverResponse.data.results;
+
     pageSize = results.length;
 
     setStarshipArray(results);

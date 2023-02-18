@@ -27,8 +27,11 @@ const baseURL = "https://swapi.dev/api/";
 
 // ping SWAPI for all starships
 app.get(`/get_starships/`, async (req, res) => {
-  let pageFromUrl = req.query.page;
-  let apiResponse = await axios(`${baseURL}starships/?page=${pageFromUrl}`);
+  const pageFromUrl = req.query.page;
+
+  const config = { params: { page: pageFromUrl } };
+  const apiResponse = await axios.get(`${baseURL}starships/`, config);
+
   res.json(apiResponse.data);
 });
 
